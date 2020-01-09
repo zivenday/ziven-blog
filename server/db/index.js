@@ -14,7 +14,7 @@ class Mysql {
   constructor() {}
   query() {
     return new Promise((resolve, reject) => {
-      pool.query("SELECT * from ceshidata", function(error, results, fields) {
+      pool.query("SELECT * from mysql", function(error, results, fields) {
         if (error) {
           throw error;
         }
